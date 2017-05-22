@@ -76,7 +76,7 @@ var packages = [{
 
 var browserifyOptions = {
     debug: true,
-    // standalone: 'Web3',
+    standalone: 'Web3',
     derequire: true,
     insertGlobalVars: false, // jshint ignore:line
     detectGlobals: false,
@@ -154,4 +154,3 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['version', 'lint', 'clean', packages[packages.length-1].fileName]);
-
