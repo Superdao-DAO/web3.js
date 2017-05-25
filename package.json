@@ -29,14 +29,14 @@
     "gulp-uglify": "^2.0.1",
     "istanbul": "^0.4.4",
     "jshint": ">=2.5.0",
-    "lerna": "2.0.0-beta.38",
+    "lerna": "2.0.0-rc.5",
     "mocha": ">=2.3.3",
     "sandboxed-module": "^2.0.2",
     "underscore": "^1.8.3",
     "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
-    "postinstall": "lerna bootstrap",
+    "postinstall": "lerna bootstrap --skip-git-check",
     "build": "gulp",
     "watch": "gulp watch",
     "lint": "jshint *.js packages",
