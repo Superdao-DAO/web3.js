@@ -36,6 +36,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
+    "preinstall": "npm i lerna --save",
     "postinstall": "lerna bootstrap --skip-git-check",
     "build": "gulp",
     "watch": "gulp watch",
