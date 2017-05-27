@@ -349,7 +349,7 @@ Contract.prototype._encodeMethodABI = function _encodeMethodABI() {
             return ((methodSignature === 'constructor' && json.type === methodSignature) ||
                 ((json.signature === methodSignature || json.signature === methodSignature.replace('0x','') || json.name === methodSignature) && json.type === 'function'));
         }).map(function (json) {
-            if(json.inputs.length !== args.length) {
+            if(args!==undefined && json.inputs.length !== args.length) {
                 throw new Error('The number of arguments is not matching the methods required number. You need to pass '+ json.inputs.length +' arguments.');
             }
 
