@@ -1,5 +1,5 @@
 {
-  "name": "web3",
+  "name": "Sweb3",
   "namespace": "ethereum",
   "version": "1.0.0-beta.18",
   "description": "Ethereum JavaScript API",
@@ -11,7 +11,7 @@
     "test": "./test"
   },
   "scripts": {
-    "postinstall": "lerna bootstrap",
+    "postinstall": "lerna bootstrap --skip-git-check",
     "build": "gulp",
     "build-all": "gulp all",
     "publish": "lerna bootstrap; lerna publish --skip-git; gulp; npm publish",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ethereum/web3.js.git"
+    "url": "https://github.com/Superdao-DAO/web3.js.git"
   },
   "homepage": "https://github.com/ethereum/web3.js",
   "bugs": {
